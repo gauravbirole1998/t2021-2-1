@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Program1 {
+
+	public static void main(String[] args) {
+
+	int a,b,c;
+	Scanner scan =new Scanner(System.in);
+	System.out.println("Enter first number");
+	a = scan.nextInt();
+	System.out.println("Enter second number");
+	b= scan.nextInt();
+	System.out.println("Choices Are:");
+	System.out.println("1. Addition");
+	System.out.println("2. Substraction");
+	System.out.println("3. Multiplicatio");
+	System.out.println("4. Division");
+	System.out.println("Enter your choice");
+	int cl = scan.nextInt();
+	switch(cl)
+	{
+	case 1:
+		c=a+b;
+		System.out.println("Addition ="+c);
+		break;
+	case 2:
+		c=a-b;
+		System.out.println("Substraction ="+c);
+		break;
+		
+		c=a*b;
+		System.out.println("Multiplication ="+c);
+		break;
+		
+		c=a/b;
+		System.out.println("Division ="+c);
+		break;
+		
+		default:
+			System.out.println("You have entered wrong choice");
+			}
+	}
+}
